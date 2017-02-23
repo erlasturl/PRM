@@ -1,0 +1,1 @@
+res<-nlminb(log(c(rep(90000,15),27000,0.001,1,0.3,0.01,1000,0.5,4,0.01)),brom,dat=TheData, lower=log(c(rep(10000,15),1000,0,0,0,0,100,0,3.5,0)),upper=log(c(rep(500000,15),100000,5,5,1,1,5000,1,4.5,0.03)),control=list(iter.max=300,eval.max=300))  
